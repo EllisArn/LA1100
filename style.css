@@ -5,13 +5,25 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 :root {
     --dark: #0F1F1B;
-    --light: #F2E5DA;
+    --light: #fcf2eb;
     --darkgreen: #006A00;
     --limegreen: #A5C72C;
     --orange: #C7990A;
+}
+
+h1 {
+    margin: 0.5em;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    margin: 1em;
+    font-size: 1.2em;
 }
