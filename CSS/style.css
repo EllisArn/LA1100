@@ -10,13 +10,17 @@
     word-wrap: break-word;
 }
 
-.Infos, .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10, .Donation, .Footer {
+.Infos,
+.Bild,
+.Donation,
+.Footer {
     margin: 0px 20px 0px 20px;
 }
 
 :root {
     --dark: #080f0e;
     --light: #fcf2eb;
+    --lightgray: #d0c9c4;
     --darkgreen: #006A00;
     --limegreen: #A5C72C;
     --orange: #C7990A;
@@ -30,16 +34,12 @@
     grid-template-areas:
         "Startseite"
         "Infos"
-        "Bild-1"
-        "Bild-2"
-        "Bild-3"
-        "Bild-4"
-        "Bild-5"
-        "Bild-6"
-        "Bild-7"
-        "Bild-8"
-        "Bild-9"
-        "Bild-10"
+        "Bild"
+        "Bild"
+        "Bild"
+        "Bild"
+        "Bild"
+        "Bild"
         "Donation"
         "Footer";
 }
@@ -80,51 +80,11 @@ img {
     font-size: 25px;
 }
 
-.Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10 {
+.Bild {
     padding: 10px 10px 7px 10px;
-    border: var(--light) 1px solid;
+    border: var(--lightgray) 1px solid;
     border-radius: 10px;
     text-align: center;
-}
-
-.Bild-1 {
-    grid-area: Bild-1;
-}
-
-.Bild-2 {
-    grid-area: Bild-2;
-}
-
-.Bild-3 {
-    grid-area: Bild-3;
-}
-
-.Bild-4 {
-    grid-area: Bild-4;
-}
-
-.Bild-5 {
-    grid-area: Bild-5;
-}
-
-.Bild-6 {
-    grid-area: Bild-6;
-}
-
-.Bild-7 {
-    grid-area: Bild-7;
-}
-
-.Bild-8 {
-    grid-area: Bild-8;
-}
-
-.Bild-9 {
-    grid-area: Bild-9;
-}
-
-.Bild-10 {
-    grid-area: Bild-10;
 }
 
 .Donation {
@@ -145,6 +105,8 @@ img {
 
 .Footer {
     grid-area: Footer;
+    color: var(--lightgray);
+    margin-bottom: 10px;
 }
 
 
