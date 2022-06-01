@@ -30,7 +30,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    gap: 20px 20px;
+    /* gap: 20px 20px; */
     grid-template-areas:
         "Startseite"
         "Infos"
@@ -109,6 +109,14 @@ img {
     margin-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 /* h1 {
     margin: 0.5em;
@@ -116,34 +124,80 @@ img {
     font-size: 3em;
 } */
 
-@media all and (min-width: 600px) { 
+@media all and (min-width: 600px) {
     .Bild {
-        width: 1fr;
-        height: 1fr;
+        /* width: 1fr;
+        height: 1fr; */
         align-items: center;
         align-self: center;
         align-content: center;
+        margin: 0;
     }
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: auto;
         gap: 20px 20px;
         grid-template-areas:
             "Startseite Startseite Startseite"
             "Infos Infos Infos"
-            "Bild-1 Bild-2 Bild-3 "
+            "Bild-1 Bild-2 Bild-3"
             "Bild-4 Bild-5 Bild-6"
             "Donation Donation Donation"
             "Footer Footer Footer";
     }
 
-    .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6 {
+    /* #Bild-1,
+    #Bild-2,
+    #Bild-3,
+    #Bild-4,
+    #Bild-5,
+    #Bild-6 {
         padding: 10px 10px 7px 10px;
         border: var(--light) 1px solid;
         border-radius: 10px;
         text-align: center;
+    } */
+
+    #Bild-1 {
+        /* margin: 20px 10px 10px 20px; */
+        height: fit-content;
     }
-    
+
+    #Bild-2 {
+        /* margin: 20px 10px 10px 10px; */
+        height: fit-content;
     }
+
+    #Bild-3 {
+        /* margin: 20px 20px 10px 10px; */
+        height: fit-content;
+    }
+
+    #Bild-4 {
+        /* margin: 10px 10px 20px 20px; */
+        height: fit-content;
+    }
+
+    #Bild-5 {
+        /* margin: 10px 10px 20px 10px; */
+        height: fit-content;
+    }
+
+    #Bild-6 {
+        /* margin: 10px 20px 20px 10px; */
+        height: fit-content;
+    }
+
+
+
+    /* #Bild-1,
+    #Bild-2,
+    #Bild-3,
+    #Bild-4,
+    #Bild-5,
+    #Bild-6 {
+        margin: 20px;
+    } */
+}

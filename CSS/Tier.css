@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: var(--dark);
+  color: var(--light);
+  word-wrap: break-word;
+}
+.Zurück,
+.Infos,
+.Bild {
+  margin: 0px 20px 0px 20px;
+}
+
+:root {
+  --dark: #080f0e;
+  --light: #fcf2eb;
+  --darkgreen: #006a00;
+  --limegreen: #a5c72c;
+  --orange: #c7990a;
+}
+
+.Startseite {
+  grid-area: Startseite;
+  /* background-image: url("../images/capybara-in-a-bucket.gif"); */
+  background-size: cover;
+  background-position: center;
+  height: 10vh;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 20px 20px;
+  grid-template-areas:
+    'Startseite'
+    'Bild'
+    'Infos'
+    'Zurück';
+}
+
+#titel {
+  line-height: 10vh;
+  font-size: 2em;
+  font-family: 'Merriweather';
+  background: transparent;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.Infos {
+  grid-area: Infos;
+  font-size: 1.2em;
+  text-align: center;
+
+  border: var(--light) 1px solid;
+  padding: 10px 10px 7px 10px;
+  border-radius: 10px;
+}
+
+.Zurück {
+  grid-area: Zurück;
+  font-size: 1.2em;
+  text-align: center;
+
+  border: var(--light) 1px solid;
+  padding: 10px 10px 7px 10px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Bild-text {
+  font-family: 'Roboto';
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.Bild {
+  padding: 10px 10px 7px 10px;
+  border: var(--light) 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
