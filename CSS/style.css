@@ -115,3 +115,35 @@ img {
     text-align: center;
     font-size: 3em;
 } */
+
+@media all and (min-width: 600px) { 
+    .Bild {
+        width: 1fr;
+        height: 1fr;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 20px 20px;
+        grid-template-areas:
+            "Startseite Startseite Startseite"
+            "Infos Infos Infos"
+            "Bild-1 Bild-2 Bild-3 "
+            "Bild-4 Bild-5 Bild-6"
+            "Donation Donation Donation"
+            "Footer Footer Footer";
+    }
+
+    .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6 {
+        padding: 10px 10px 7px 10px;
+        border: var(--light) 1px solid;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    }
