@@ -10,14 +10,8 @@
     word-wrap: break-word;
 }
 
-.Infos,
-.Bild,
-.Donation,
-.Footer {
-    margin: 0px 20px 0px 20px;
-}
-
 :root {
+    color-scheme: dark;
     --dark: #080f0e;
     --light: #fcf2eb;
     --lightgray: #d0c9c4;
@@ -26,11 +20,16 @@
     --orange: #C7990A;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    /* gap: 20px 20px; */
+    gap: 20px 20px;
+    padding: 0px 20px 20px 20px;
     grid-template-areas:
         "Startseite"
         "Infos"
@@ -51,17 +50,14 @@
     background-position: center;
     height: 100vh;
     text-align: center;
+    margin: 0px -20px 0px -20px;
 }
 
-#titel {
+#Titel {
     line-height: 100vh;
     font-size: 2em;
     font-family: 'Merriweather';
     background: transparent;
-}
-
-html {
-    overflow-x: hidden;
 }
 
 .Infos {
@@ -91,14 +87,14 @@ img {
     grid-area: Donation;
 }
 
-#Donate-Button {
+#Button {
     width: 100%;
     background-color: var(--darkgreen);
     padding: 15px 0px;
     border-radius: 10px;
 }
 
-#Donate-Button:hover {
+#Button:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -106,7 +102,6 @@ img {
 .Footer {
     grid-area: Footer;
     color: var(--lightgray);
-    margin-bottom: 10px;
 }
 
 a {
@@ -117,23 +112,24 @@ a:hover {
     text-decoration: underline;
 }
 
-
-/* h1 {
-    margin: 0.5em;
-    text-align: center;
-    font-size: 3em;
-} */
-
 @media all and (min-width: 600px) {
-    .Bild {
-        /* width: 1fr;
-        height: 1fr; */
-        align-items: center;
-        align-self: center;
-        align-content: center;
-        margin: 0;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 20px 20px;
+        grid-template-areas:
+            "Startseite Startseite"
+            "Infos Infos"
+            "Bild-1 Bild-2"
+            "Bild-3 Bild-4"
+            "Bild-5 Bild-6"
+            "Donation Donation"
+            "Footer Footer";
     }
+}
 
+@media all and (min-width: 900px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -147,57 +143,4 @@ a:hover {
             "Donation Donation Donation"
             "Footer Footer Footer";
     }
-
-    /* #Bild-1,
-    #Bild-2,
-    #Bild-3,
-    #Bild-4,
-    #Bild-5,
-    #Bild-6 {
-        padding: 10px 10px 7px 10px;
-        border: var(--light) 1px solid;
-        border-radius: 10px;
-        text-align: center;
-    } */
-
-    #Bild-1 {
-        /* margin: 20px 10px 10px 20px; */
-        height: fit-content;
-    }
-
-    #Bild-2 {
-        /* margin: 20px 10px 10px 10px; */
-        height: fit-content;
-    }
-
-    #Bild-3 {
-        /* margin: 20px 20px 10px 10px; */
-        height: fit-content;
-    }
-
-    #Bild-4 {
-        /* margin: 10px 10px 20px 20px; */
-        height: fit-content;
-    }
-
-    #Bild-5 {
-        /* margin: 10px 10px 20px 10px; */
-        height: fit-content;
-    }
-
-    #Bild-6 {
-        /* margin: 10px 20px 20px 10px; */
-        height: fit-content;
-    }
-
-
-
-    /* #Bild-1,
-    #Bild-2,
-    #Bild-3,
-    #Bild-4,
-    #Bild-5,
-    #Bild-6 {
-        margin: 20px;
-    } */
 }

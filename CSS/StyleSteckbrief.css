@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: var(--dark);
+  color: var(--light);
+  word-wrap: break-word;
+}
+
+:root {
+  color-scheme: dark;
+  --dark: #080f0e;
+  --light: #fcf2eb;
+  --lightgray: #d0c9c4;
+  --darkgreen: #006A00;
+  --limegreen: #A5C72C;
+  --orange: #C7990A;
+}
+
+html {
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 20px 20px;
+  grid-template-areas:
+    "Titelbox"
+    "Bild"
+    "Zurück"
+    "Footer";
+}
+
+.Titelbox {
+  grid-area: Titelbox;
+  text-align: center;
+}
+
+#Titel {
+  font-size: 2em;
+  font-family: 'Merriweather';
+  background: transparent;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Bild {
+  grid-area: Bild;
+  padding: 10px 10px 7px 10px;
+  border: var(--lightgray) 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Bild-infos {
+  font-family: 'Roboto';
+  background-color: transparent;
+  font-size: 25px;
+  padding-top: 5px;
+  margin: 5px -10px 0px -10px;
+  border-top: var(--lightgray) 1px solid;
+}
+
+.Zurück {
+  grid-area: Zurück;
+}
+
+#Button {
+  width: 100%;
+  background-color: var(--darkgreen);
+  padding: 15px 0px;
+  border-radius: 10px;
+}
+
+#Button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Footer {
+  grid-area: Footer;
+  color: var(--lightgray);
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* h1 {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 3em;
+} */
