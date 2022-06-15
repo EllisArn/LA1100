@@ -45,7 +45,7 @@ html {
 
 .Startseite {
     grid-area: Startseite;
-    /* background-image: url("../images/capybara-in-a-bucket.gif"); */
+    background-image: url("../images/capybara-in-a-bucket.gif"); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -63,11 +63,13 @@ html {
 .Infos {
     grid-area: Infos;
     font-size: 1.2em;
+    text-align: center;
 }
 
 img {
     width: 100%;
     border-radius: 5px;
+    
 }
 
 .Bild-text {
@@ -110,6 +112,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    transform: translate(0, -10px)
 }
 
 @media all and (min-width: 600px) {
