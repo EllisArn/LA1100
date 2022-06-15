@@ -45,7 +45,7 @@ html {
 
 .Startseite {
     grid-area: Startseite;
-    /* background-image: url("../images/capybara-in-a-bucket.gif"); */
+    background-image: url("../images/capybara-in-a-bucket.gif");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -103,6 +103,7 @@ img {
 .Footer {
     grid-area: Footer;
     color: var(--lightgray);
+    text-align: center;
 }
 
 a {
