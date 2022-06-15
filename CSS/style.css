@@ -145,4 +145,8 @@ a:hover {
             "Donation Donation Donation"
             "Footer Footer Footer";
     }
+
+    .Startseite {
+        background-image: url("../images/capybara-lowpoly.gif");
+    }
 }

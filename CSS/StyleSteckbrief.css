@@ -8,6 +8,7 @@
   background-color: var(--dark);
   color: var(--light);
   word-wrap: break-word;
+
 }
 
 :root {
@@ -161,6 +162,20 @@ a:hover {
   }
 }
 
+/* Eichhörnchen */
+@media all and (min-width: 1018) {
+  .Bild:not(#EX-Capybara, #EX-Biber, #EX-Chinchilla, #EX-Hamster, #EX-Stachelschwein) {
+    width: 30%;
+    margin: -5px -10px -10px 5px;
+    padding: 10px 10px 6px 10px;
+    height: 100%;
+    height: fit-content;
+    border-left: var(--lightgray) 1px solid;
+    border-bottom: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
 /* Capybara */
 @media all and (min-width: 1077px) {
   .Bild:not(#EX-Biber, #EX-Eichhörnchen, #EX-Chinchilla, #EX-Hamster, #EX-Stachelschwein) {
@@ -177,7 +192,7 @@ a:hover {
 
 /* Stachelschwein, Chinchilla, Hamster */
 @media all and (min-width: 1142px) {
-  .Bild:not(#EX-Biber, #EX-Biber, #EX-Eichhörnchen) {
+  .Bild:not(#EX-Capybara, #EX-Biber, #EX-Eichhörnchen) {
     width: 30%;
     margin: -5px -10px -10px 5px;
     padding: 10px 10px 6px 10px;
