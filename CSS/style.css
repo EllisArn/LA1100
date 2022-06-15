@@ -111,7 +111,6 @@ a {
 }
 
 a:hover {
-    /* text-decoration: underline; */
     transform: translate(0, -10px)
 }
 
