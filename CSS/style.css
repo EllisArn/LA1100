@@ -104,6 +104,7 @@ img {
 .Footer {
     grid-area: Footer;
     color: var(--lightgray);
+    text-align: center;
 }
 
 a {
