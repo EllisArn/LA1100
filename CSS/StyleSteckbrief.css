@@ -90,6 +90,7 @@ img {
   grid-area: Footer;
   color: var(--lightgray);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 a {
